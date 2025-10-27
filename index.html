@@ -106,6 +106,24 @@
             </div>
         </div>
     </div>
+    <div class="validation_block">
+    <div class="container">
+        <h2>Проверка номера телефона и ИИН</h2>
+        <div class="validation_group">
+            <label>Номер телефона (Россия):</label>
+            <input type="text" id="phoneInput" placeholder="Например, +79261234567">
+            <button onclick="checkPhone()">Проверить</button>
+            <p id="phoneResult"></p>
+        </div>
+        <div class="validation_group">
+            <label>ИИН (Казахстан):</label>
+            <input type="text" id="iinInput" placeholder="Например, 990101123456">
+            <button onclick="checkIIN()">Проверить</button>
+            <p id="iinResult"></p>
+        </div>
+    </div>
+</div>
+    
 
     <div class="footer">
         <div class="container">
@@ -131,8 +149,26 @@
         </div>
     </div>
 </div>
+<div class="validation_block">
+    <div class="container">
+        <h2>Проверка номера телефона и ИИН</h2>
+        <div class="validation_group">
+            <label>Номер телефона (Россия):</label>
+            <input type="text" id="phoneInput" placeholder="Например, +79261234567">
+            <button onclick="checkPhone()">Проверить</button>
+            <p id="phoneResult"></p>
+        </div>
+        <div class="validation_group">
+            <label>ИИН (Казахстан):</label>
+            <input type="text" id="iinInput" placeholder="Например, 990101123456">
+            <button onclick="checkIIN()">Проверить</button>
+            <p id="iinResult"></p>
+        </div>
+    </div>
+</div>
 
 </body>
 <script src="js/main.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/validation.js"></script>
 </html>

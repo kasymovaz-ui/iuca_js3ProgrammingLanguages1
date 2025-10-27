@@ -425,3 +425,46 @@
     100% {
     }
 }
+ 
+/* css/style.css */
+.validation_block {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.validation_group {
+    margin: 20px 0;
+}
+
+.validation_group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.validation_group input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.validation_group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.validation_group button:hover {
+    background-color: #0056b3;
+}
+
+.validation_group p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}

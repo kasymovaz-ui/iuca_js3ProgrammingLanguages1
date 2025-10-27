@@ -75,3 +75,16 @@ prev.onclick = () => {
 }
 
 autoSlider(index)
+
+// js/main.js
+function checkPhone() {
+    const phone = document.getElementById("phoneInput").value;
+    const result = validateRussianPhoneNumber(phone);
+    document.getElementById("phoneResult").textContent = result ? "Валидный номер" : "Невалидный номер";
+}
+
+function checkIIN() {
+    const iin = document.getElementById("iinInput").value;
+    const result = validateKazakhstanIIN(iin);
+    document.getElementById("iinResult").textContent = result ? "Валидный ИИН" : "Невалидный ИИН";
+}

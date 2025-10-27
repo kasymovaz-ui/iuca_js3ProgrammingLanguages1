@@ -17,6 +17,24 @@ phoneButton.addEventListener('click', ()=>{
     }
 })
 
+//проверка номера
+const russianPhoneInput = document.querySelector('#russian_phone_input');
+const russianPhoneButton = document.querySelector('#russian_phone_button');
+const russianPhoneSpan = document.querySelector('#russian_phone_result');
+
+
+//+996550644772
+const russianReqExp = /^\+7 [2579]\d{2} \d{2}-\d{2}-\d{2}$/
+
+russianPhoneButton.addEventListener('click', ()=>{
+    if (russianReqExp.test(russianPhoneInput.value)){
+        russianPhoneSpan.innerHTML = 'Этот номер существует';
+        russianPhoneSpan.style.color = 'green';
+    }else {
+        russianPhoneSpan.innerHTML = 'Этот номер не существует';
+        russianPhoneSpan.style.color = 'red';
+    }
+})
 
 //TAB SLIDER
 const tabsContentCards = document.querySelectorAll('.tab_content_block');
